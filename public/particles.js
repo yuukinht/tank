@@ -12,7 +12,7 @@ function setup() {
 	strokeWeight(1);
 	stroke(0);
 	//socket = io.connect('http://localhost:3000');
-	socket = io.();
+	socket = io();
 	socket.emit('setinfo',{name:"Yuuki",color:255});
 	
 	socket.on('sceneupdate', function(data) {
