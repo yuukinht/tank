@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tank.io</title>
+    <meta charset="utf-8">
+    <script type='text/javascript' src="particles.js"></script>
+    <script type='text/javascript' src="p5.js"></script>
+	<script type="text/javascript" src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+	</head>
+
+<body>
+	<div class="scoreboard">	
+	</div>
+    <div id='mainCanvas'></div>
+</body>
+<style>
+*{
+margin:0 0;
+overflow:hidden;
+}
+.scoreboard{
+	position:fixed;
+	left:0px;
+	top:0px;
+	height:100px;
+	width:200px;
+	background-color:rgba(15,15,20,0.5);
+}
+body{
+background-image:url("mainmenu.png");
+background-size:cover;
+}
+#mainCanvas{
+position:absolute;
+top :50%;
+left:50%;
+transform: translate(-50%,-50%);
+background-color:rgba(15,15,20,0.5);
+}
+</style>
+</html>
